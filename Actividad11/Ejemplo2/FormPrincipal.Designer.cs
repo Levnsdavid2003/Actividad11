@@ -34,6 +34,8 @@
             tbResultado = new TextBox();
             lbResultado = new Label();
             btnLimpiar = new Button();
+            lbRegistrarAviso = new Label();
+            lbResultadoAviso = new Label();
             SuspendLayout();
             // 
             // btnRegistrar
@@ -88,7 +90,7 @@
             // btnLimpiar
             // 
             btnLimpiar.Font = new Font("Adobe Myungjo Std M", 10F);
-            btnLimpiar.Location = new Point(146, 248);
+            btnLimpiar.Location = new Point(81, 248);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(110, 33);
             btnLimpiar.TabIndex = 11;
@@ -96,11 +98,31 @@
             btnLimpiar.UseVisualStyleBackColor = true;
             btnLimpiar.Click += btnLimpiar_Click;
             // 
+            // lbRegistrarAviso
+            // 
+            lbRegistrarAviso.AutoSize = true;
+            lbRegistrarAviso.Location = new Point(24, 73);
+            lbRegistrarAviso.Name = "lbRegistrarAviso";
+            lbRegistrarAviso.Size = new Size(167, 15);
+            lbRegistrarAviso.TabIndex = 12;
+            lbRegistrarAviso.Text = "No hay números para agregar.";
+            // 
+            // lbResultadoAviso
+            // 
+            lbResultadoAviso.AutoSize = true;
+            lbResultadoAviso.Location = new Point(212, 257);
+            lbResultadoAviso.Name = "lbResultadoAviso";
+            lbResultadoAviso.Size = new Size(100, 15);
+            lbResultadoAviso.TabIndex = 13;
+            lbResultadoAviso.Text = "Registro limpiado";
+            // 
             // FormPrincipal
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(404, 293);
+            ClientSize = new Size(404, 310);
+            Controls.Add(lbResultadoAviso);
+            Controls.Add(lbRegistrarAviso);
             Controls.Add(btnLimpiar);
             Controls.Add(btnRegistrar);
             Controls.Add(tbRegistrar);
@@ -122,5 +144,7 @@
         private TextBox tbResultado;
         private Label lbResultado;
         private Button btnLimpiar;
+        private Label lbRegistrarAviso;
+        private Label lbResultadoAviso;
     }
 }

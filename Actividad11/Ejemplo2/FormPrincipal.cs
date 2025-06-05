@@ -7,6 +7,8 @@ namespace Ejemplo2
         public FormPrincipal()
         {
             InitializeComponent();
+            lbRegistrarAviso.Visible = false;
+            lbResultadoAviso.Visible = false;
         }
 
         private void tbRegistrar_TextChanged(object sender, EventArgs e)
@@ -16,11 +18,21 @@ namespace Ejemplo2
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
-            double num = Convert.ToDouble(tbRegistrar.Text);
-
-            valores[contador] = num;
-            contador++;
-            tbRegistrar.Text = string.Empty;
+            lbResultadoAviso.Visible = false;
+            double num;
+            if (tbRegistrar.Text != String.Empty)
+            {
+                num = Convert.ToDouble(tbRegistrar.Text);
+                lbRegistrarAviso.Visible = false;
+                valores[contador] = num;
+                contador++;
+                tbRegistrar.Text = string.Empty;
+            }
+            else
+            {
+                lbRegistrarAviso.Text = "No hay número para agregar";
+                lbRegistrarAviso.Visible = true;
+            }
         }
 
         private void btnPromedio_Click(object sender, EventArgs e)
@@ -47,6 +59,7 @@ namespace Ejemplo2
             contador = 0;
             valores = new double[100];
             tbResultado.Text = string.Empty;
+            lbResultadoAviso.Visible = true;
         }
     }
 }
