@@ -95,7 +95,7 @@
             Controls.Add(tbResultado);
             Controls.Add(lbResultado);
             Name = "Form1";
-            Text = "Form1";
+            Text = "Ejemplo1 - Sin Vector";
             ResumeLayout(false);
             PerformLayout();
         }
