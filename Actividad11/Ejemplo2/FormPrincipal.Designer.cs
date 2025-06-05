@@ -40,7 +40,7 @@
             // 
             // btnRegistrar
             // 
-            btnRegistrar.Font = new Font("Adobe Myungjo Std M", 10F);
+            btnRegistrar.Font = new Font("Microsoft Sans Serif", 10F);
             btnRegistrar.Location = new Point(266, 23);
             btnRegistrar.Name = "btnRegistrar";
             btnRegistrar.Size = new Size(110, 50);
@@ -51,16 +51,16 @@
             // 
             // tbRegistrar
             // 
-            tbRegistrar.Font = new Font("Adobe Myungjo Std M", 15F);
-            tbRegistrar.Location = new Point(24, 23);
+            tbRegistrar.Font = new Font("Microsoft Sans Serif", 15F);
+            tbRegistrar.Location = new Point(24, 30);
             tbRegistrar.Name = "tbRegistrar";
-            tbRegistrar.Size = new Size(217, 47);
+            tbRegistrar.Size = new Size(217, 30);
             tbRegistrar.TabIndex = 9;
             tbRegistrar.TextChanged += tbRegistrar_TextChanged;
             // 
             // btnPromedio
             // 
-            btnPromedio.Font = new Font("Adobe Myungjo Std M", 10F);
+            btnPromedio.Font = new Font("Microsoft Sans Serif", 10F);
             btnPromedio.Location = new Point(266, 93);
             btnPromedio.Name = "btnPromedio";
             btnPromedio.Size = new Size(110, 50);
@@ -71,25 +71,26 @@
             // 
             // tbResultado
             // 
-            tbResultado.Font = new Font("Adobe Myungjo Std M", 15F);
+            tbResultado.Font = new Font("Microsoft Sans Serif", 15F);
             tbResultado.Location = new Point(24, 169);
             tbResultado.Name = "tbResultado";
-            tbResultado.Size = new Size(352, 47);
+            tbResultado.Size = new Size(352, 30);
             tbResultado.TabIndex = 7;
             // 
             // lbResultado
             // 
             lbResultado.AutoSize = true;
-            lbResultado.Font = new Font("Adobe Myungjo Std M", 15.75F);
-            lbResultado.Location = new Point(24, 133);
+            lbResultado.Font = new Font("Microsoft Sans Serif", 15F);
+            lbResultado.ForeColor = SystemColors.ControlDarkDark;
+            lbResultado.Location = new Point(24, 141);
             lbResultado.Name = "lbResultado";
-            lbResultado.Size = new Size(109, 22);
+            lbResultado.Size = new Size(99, 25);
             lbResultado.TabIndex = 6;
             lbResultado.Text = "Resultado";
             // 
             // btnLimpiar
             // 
-            btnLimpiar.Font = new Font("Adobe Myungjo Std M", 10F);
+            btnLimpiar.Font = new Font("Microsoft Sans Serif", 10F);
             btnLimpiar.Location = new Point(81, 248);
             btnLimpiar.Name = "btnLimpiar";
             btnLimpiar.Size = new Size(110, 33);
@@ -101,18 +102,20 @@
             // lbRegistrarAviso
             // 
             lbRegistrarAviso.AutoSize = true;
+            lbRegistrarAviso.Font = new Font("Microsoft Sans Serif", 9F);
             lbRegistrarAviso.Location = new Point(24, 73);
             lbRegistrarAviso.Name = "lbRegistrarAviso";
-            lbRegistrarAviso.Size = new Size(167, 15);
+            lbRegistrarAviso.Size = new Size(174, 15);
             lbRegistrarAviso.TabIndex = 12;
             lbRegistrarAviso.Text = "No hay números para agregar.";
             // 
             // lbResultadoAviso
             // 
             lbResultadoAviso.AutoSize = true;
+            lbResultadoAviso.Font = new Font("Microsoft Sans Serif", 9F);
             lbResultadoAviso.Location = new Point(212, 257);
             lbResultadoAviso.Name = "lbResultadoAviso";
-            lbResultadoAviso.Size = new Size(100, 15);
+            lbResultadoAviso.Size = new Size(104, 15);
             lbResultadoAviso.TabIndex = 13;
             lbResultadoAviso.Text = "Registro limpiado";
             // 
