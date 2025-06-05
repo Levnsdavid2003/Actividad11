@@ -28,23 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            btnRegistrar = new Button();
             lbResultado = new Label();
             tbResultado = new TextBox();
             btnPromedio = new Button();
             tbRegistrar = new TextBox();
+            btnRegistrar = new Button();
             SuspendLayout();
-            // 
-            // btnRegistrar
-            // 
-            btnRegistrar.Font = new Font("Adobe Myungjo Std M", 10F);
-            btnRegistrar.Location = new Point(289, 34);
-            btnRegistrar.Name = "btnRegistrar";
-            btnRegistrar.Size = new Size(110, 50);
-            btnRegistrar.TabIndex = 0;
-            btnRegistrar.Text = "Registrar";
-            btnRegistrar.UseVisualStyleBackColor = true;
-            btnRegistrar.Click += button1_Click;
             // 
             // lbResultado
             // 
@@ -73,6 +62,7 @@
             btnPromedio.TabIndex = 3;
             btnPromedio.Text = "Mostrar Promedio";
             btnPromedio.UseVisualStyleBackColor = true;
+            btnPromedio.Click += btnPromedio_Click;
             // 
             // tbRegistrar
             // 
@@ -81,17 +71,29 @@
             tbRegistrar.Name = "tbRegistrar";
             tbRegistrar.Size = new Size(217, 47);
             tbRegistrar.TabIndex = 4;
+            tbRegistrar.TextChanged += tbRegistrar_TextChanged;
+            // 
+            // btnRegistrar
+            // 
+            btnRegistrar.Font = new Font("Adobe Myungjo Std M", 10F);
+            btnRegistrar.Location = new Point(289, 34);
+            btnRegistrar.Name = "btnRegistrar";
+            btnRegistrar.Size = new Size(110, 50);
+            btnRegistrar.TabIndex = 5;
+            btnRegistrar.Text = "Registrar";
+            btnRegistrar.UseVisualStyleBackColor = true;
+            btnRegistrar.Click += btnRegistrar_Click;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(465, 382);
+            Controls.Add(btnRegistrar);
             Controls.Add(tbRegistrar);
             Controls.Add(btnPromedio);
             Controls.Add(tbResultado);
             Controls.Add(lbResultado);
-            Controls.Add(btnRegistrar);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -99,11 +101,10 @@
         }
 
         #endregion
-
-        private Button btnRegistrar;
         private Label lbResultado;
         private TextBox tbResultado;
         private Button btnPromedio;
         private TextBox tbRegistrar;
+        private Button btnRegistrar;
     }
 }
